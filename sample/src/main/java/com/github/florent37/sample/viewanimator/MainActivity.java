@@ -63,6 +63,18 @@ public class MainActivity extends AppCompatActivity {
                 .start();
     }
 
+    //khlee
+    protected void simpleAnimatio2(){
+        ViewAnimator
+                .animate(mountain)
+                    .translationY(-mountain.getHeight(), 0.0f)
+                .andAnimate(text)
+                    .translationY(text.getHeight(), 0.0f)
+                .duration(667)
+
+                .start();
+    }
+    
     protected void animateParallel() {
         ViewAnimator
                 .animate(mountain,image)
