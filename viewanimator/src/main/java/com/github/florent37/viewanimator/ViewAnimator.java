@@ -4,8 +4,9 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.animation.Interpolator;
 
-import com.nineoldandroids.animation.Animator;
-import com.nineoldandroids.animation.AnimatorSet;
+//khlee
+//import com.nineoldandroids.animation.Animator;
+//import com.nineoldandroids.animation.AnimatorSet;
 
 import java.util.ArrayList;
 import java.util.List;
