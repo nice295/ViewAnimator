@@ -6,11 +6,12 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.widget.TextView;
 
-import com.nineoldandroids.animation.Animator;
-import com.nineoldandroids.animation.ArgbEvaluator;
-import com.nineoldandroids.animation.ObjectAnimator;
-import com.nineoldandroids.animation.ValueAnimator;
-import com.nineoldandroids.view.ViewHelper;
+//khlee
+//import com.nineoldandroids.animation.Animator;
+//import com.nineoldandroids.animation.ArgbEvaluator;
+//import com.nineoldandroids.animation.ObjectAnimator;
+//import com.nineoldandroids.animation.ValueAnimator;
+//import com.nineoldandroids.view.ViewHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -96,14 +97,18 @@ public class AnimationBuilder {
 
     public AnimationBuilder pivotX(float pivotX) {
         for(View view : views) {
-            ViewHelper.setPivotX(view, pivotX);
+            //khlee
+            // ViewHelper.setPivotX(view, pivotX);
+            view.setPivotX(pivotX);
         }
         return this;
     }
 
     public AnimationBuilder pivotY(float pivotY) {
         for(View view : views) {
-            ViewHelper.setPivotY(view, pivotY);
+            //khlee
+            // ViewHelper.setPivotY(view, pivotY);
+            view.setPivotY(pivotY);
         }
         return this;
     }
